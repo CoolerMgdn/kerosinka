@@ -250,8 +250,8 @@ body {
 
 /* Основной текст про олимпиаду */
 #section01 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4995A6), to(#1D6373));
-  background: linear-gradient(#4995A6, #1D6373);
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
 }
 
@@ -269,14 +269,14 @@ body {
 
 /* Информация по этапам олимпиады (Таймлайн) */
 #section02 {
-  background: #1D6373;
+  background: #13456E;
   padding: 0px;
 }
 
 /* Тематика задач и оргкомитет */
 #section03 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1D6373), to(#4995A6));
-  background: linear-gradient(#1D6373, #4995A6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -313,7 +313,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
-  border: 5px solid #005F75;
+  border: 5px solid #1E3450;
   -webkit-filter: drop-shadow(1px 1px 6px #000);
           filter: drop-shadow(1px 1px 6px #000);
 }
@@ -424,24 +424,24 @@ body {
 
 /* Блок вопросов */
 #section-questions {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4995A6), to(#1D6373));
-  background: linear-gradient(#4995A6, #1D6373);
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
   padding-bottom: 50px;
 }
 
 /* Блок нормативных документов */
 #section-doc {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4995A6), to(#1D6373));
-  background: linear-gradient(#4995A6, #1D6373);
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
   padding-bottom: 500px;
 }
 
 /* Блок регистрации(авторизации) */
 #section-reg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4995A6), to(#1D6373));
-  background: linear-gradient(#4995A6, #1D6373);
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
   padding-bottom: 50px;
   -webkit-box-pack: center;
@@ -516,7 +516,7 @@ body {
   cursor: pointer;
   text-align: center;
   font-size: 24px;
-  border-bottom: 2px solid #1D6373;
+  border-bottom: 2px solid #246498;
   border-radius: 0;
   width: 46%;
   padding-top: 0 !important;
@@ -703,13 +703,27 @@ p {
   font-size: 20px;
   margin-top: 15px;
   padding: 10px;
-  background: #246498;
+  background: #C13500;
   border: unset;
   cursor: pointer;
 }
 
 #regbutton:hover {
-  background: #C13500;
+  background: #8F2607;
+}
+
+#authbutton {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  background: #246498;
+  border: unset;
+  cursor: pointer;
+}
+
+#authbutton:hover {
+  background: #1E3450;
 }
 
 #playbutton {
@@ -744,7 +758,7 @@ p {
 
 #mailref {
   text-decoration: underline;
-  color: #246498;
+  color: #DD7A00;
 }
 
 #docref1 {
@@ -1041,15 +1055,16 @@ p {
 }
 
 .cd-timeline-img.cd-picture {
-  background: #002A38;
+  /* background:#1E3450; */
+  background: #1E3450;
 }
 
 .cd-timeline-img.cd-movie {
-  background: #002A38;
+  background: #1E3450;
 }
 
 .cd-timeline-img.cd-location {
-  background: #002A38;
+  background: #1E3450;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -1103,7 +1118,7 @@ p {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #4995A6;
+  background: #246498;
   border-radius: 0.25em;
   padding: 1em;
   -webkit-box-shadow: 0 3px 0 #004a5c;

@@ -43,7 +43,7 @@
                     <label href="#" class="password-control"></label>
                 </div>
 
-                <input type="submit" id="regbutton" name="btn_submit_register" value="Войти">
+                <input type="submit" id="authbutton" name="btn_submit_register" value="Войти">
             </form>
         </section>
     </div>

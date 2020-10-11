@@ -143,7 +143,7 @@ body {
           opacity: 0.9;
           text-transform: uppercase;
           &:hover{
-            background: #8F2607;
+            background: $link-reg-hover
           }
         }
         &.cd-link{
@@ -156,7 +156,7 @@ body {
           opacity: 0.9;
           text-transform: uppercase;
           &:hover{
-            background: #13456E;
+            background: $link-hover;
           }
         }
         &:hover{
@@ -236,7 +236,7 @@ body {
     width: 100%;
     object-fit: cover; 
     border-radius: 2px;
-    border: 5px solid #005F75;
+    border: 5px solid #1E3450;;
     filter: drop-shadow(1px 1px 6px #000);
   }
 }
@@ -323,19 +323,19 @@ body {
 }
 /* Блок вопросов */
 #section-questions {
-  background: linear-gradient(#4995A6, #1D6373);
+  background: linear-gradient($main1, $main2);
   overflow: hidden;
   padding-bottom: 50px;
 }
 /* Блок нормативных документов */
 #section-doc {
-  background: linear-gradient(#4995A6, #1D6373);
+  background: linear-gradient($main1, $main2);
   overflow: hidden;
   padding-bottom: 500px;
 }
 /* Блок регистрации(авторизации) */
 #section-reg {
-  background: linear-gradient(#4995A6, #1D6373);
+  background: linear-gradient($main1, $main2);
   overflow: hidden;
   padding-bottom: 50px;
   justify-content: center;
@@ -387,7 +387,7 @@ body {
     cursor: pointer;
     text-align: center;
     font-size: 24px;
-    border-bottom: 2px solid #1D6373;
+    border-bottom: 2px solid #246498;
     border-radius: 0;
     width: 46%;
     padding-top: 0 !important;
@@ -542,11 +542,23 @@ p {
   font-size: 20px;;
   margin-top: 15px;
   padding: 10px;
+  background: $link-reg;
+  border: unset;
+  cursor: pointer;
+  &:hover{
+    background: $link-reg-hover;
+  }
+}
+#authbutton {
+  color: #fff;
+  font-size: 20px;;
+  margin-top: 15px;
+  padding: 10px;
   background: $link;
   border: unset;
   cursor: pointer;
   &:hover{
-    background: $link-reg;
+    background: #1E3450;;
   }
 }
 #playbutton {
@@ -577,7 +589,7 @@ p {
 }
 #mailref {
   text-decoration: underline;
-  color: $link;
+  color: #DD7A00;
 }
 #docref1 {
   text-decoration: underline;
@@ -853,13 +865,14 @@ p {
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #002A38;
+  /* background:#1E3450; */
+  background: #1E3450;
 }
 .cd-timeline-img.cd-movie {
-  background: #002A38;
+  background: #1E3450;
 }
 .cd-timeline-img.cd-location {
-  background: #002A38;
+  background: #1E3450;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -932,7 +945,7 @@ p {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #4995A6;
+  background: $timeline-bg;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #004a5c;
