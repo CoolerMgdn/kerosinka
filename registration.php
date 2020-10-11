@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- by Sadykov Kamil (vk.com/coolermgdn) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+    <link rel="stylesheet" href="./src/style/main.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <?php
+        include('nav.php');
+    ?>
+
+    <!-- РГУНГ -->
+    <section id="section00"> </section>
+
+    <!-- Регистрация -->
+    <div class="container">
+        <section id="section-reg">
+            <a class="about-text5" display="block">Личный кабинет</a><br>
+
+            <form class="formreg" id='formreg' method="post" action="reg.php"> 
+                
+                <div class="switch_lk">
+                    <a href="login.php" class="about-text5 switch_lk_ref">Вход</a>
+                    <a href="registration.php" class="about-text5 switch_lk_ref switch_lk_ref_push">Регистрация</a>
+                </div>
+
+                <a class="about-text2" display="block">Личные данные</a><br>
+                
+                <div class="inputs">
+                    <p>Фамилия<span class="redtext">*</span></p>
+                    <input type="text" name="s_name" placeholder="Ваша фамилия" required>
+                </div>
+
+                <div class="inputs">
+                    <p>Имя<span class="redtext">*</span></p>
+                    <input type="text" name="f_name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="inputs">
+                    <p>Отчество</p>
+                    <input type="text" name="p_name" placeholder="Ваше отчество">
+                </div>
+                    
+                <div class="inputs">
+                    <p>Пол<span class="redtext">*</span></p>
+                    <select class="select" name="sex" placeholder="Муж или Жен" required>
+                        <option value="" selected="selected" disabled="disabled">Ваш пол</option>
+                        <option value="Муж">Мужской</option>
+                        <option value="Жен">Женский</option>
+                    </select>
+                </div>
+                    
+                <div class="inputs">
+                    <p>Дата рождения<span class="redtext">*</span></p>
+                    <input type="text" name="birdth" id='birdth' placeholder="дд.мм.гггг" required> <br>
+                </div>
+
+                <a class="about-text2" display="block">Учебное заведение</a><br>
+
+                <div class="inputs">
+                    <p>Регион РФ<span class="redtext">*</span></p>
+                    <input type="text" name="region" placeholder="Номер вашего региона" maxlength="3" required>
+                </div>
+
+                <div class="inputs">
+                    <p>Населенный пункт<span class="redtext">*</span></p>
+                    <input  type="text" name="edu_locality" placeholder="(Город, село, хутор и т.п.)" required>
+                </div>
+
+                <div class="inputs">
+                    <p>Класс<span class="redtext">*</span></p>
+                    <select class="select" name="class" placeholder="В каком классе вы обучаетесь" required>
+                        <option value="" selected="selected" disabled="disabled">Ваш класс</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="Не школьник">Не школьник</option>
+                    </select>
+                </div>
+
+                <div class="inputs">
+                    <p>Учебное заведение</p>
+                    <input  type="text" name="edu" placeholder="Название учебного заведения">
+                </div>
+
+                <div class="inputs">
+                    <p>Адрес учебного заведения</p>
+                    <input  type="text" name="edu_address" placeholder="Адрес школы (лицея)"><br>
+                </div>
+
+                <a class="about-text2" display="block">Координаты для связи</a><br>
+
+                <div class="inputs">
+                    <p>E-mail<span class="redtext">*</span></p>
+                    <input  type="text" name="email" placeholder="example@mail.ru" required>
+                </div>
+                    
+                <span id="valid_email_message" class="mesage_error"></span>
+
+                <div class="inputs">
+                    <p>Мобильный телефон<span class="redtext">*</span></p>
+                    <input  type="text" name="phone" id='phone' placeholder="+7 (___) ___-__-__" required>
+                </div>
+                
+                <div class="inputs">
+                    <p>Почтовый индекс<span class="redtext">*</span></p>
+                    <input  type="text" name="zip_index" id='zip_index' placeholder="Почтовый индекс" maxlength="6" required>
+                </div>
+                    
+                <div class="inputs">
+                    <p>Населенный пункт<span class="redtext">*</span></p>
+                    <input  type="text" name="locality" placeholder="(Город, село, хутор и т.п.)" required>
+                </div>
+                <div class="inputs">
+                    <p>Улица<span class="redtext">*</span></p>
+                    <input  type="text" name="street" placeholder="Улица" required>
+                </div>
+                <div class="inputs">
+                    <p>Дом<span class="redtext">*</span></p>
+                    <input  type="text" name="house" placeholder="Номер дома" required>
+                </div>
+                <div class="inputs">
+                    <p>Квартира</p>
+                    <input  type="text" name="apartment" placeholder="Номер квартиры"> <br>
+                </div>
+                
+<!--
+                <div class="inputs">
+                    <p>Пароль<span class="redtext">*</span></p>
+                    <input  type="password" name="password" placeholder="Введите пароль" required>
+                </div>
+
+                <span id="valid_password_message" class="mesage_error"></span>
+                <div class="inputs">
+                    <p>Подтверждение пароля<span class="redtext">*</span></p>
+                    <input  type="password" name="confirm_password" placeholder="Повторите пароль" required>
+                </div>
+                <span id="valid_confirm_password_message" class="mesage_error"></span>
+-->
+
+                <p class="usersconf" >Нажимая кнопку «Зарегистрироваться», Вы автоматически соглашаетесь с <a id='mailref' target="_blank" href="documents/Politica_confidecialnosti.docx">политикой конфиденциальности</a> и даете свое согласие на обработку персональных данных. Ваши данные не будут переданы третьим лицам.</p>
+                <input type="submit" id="regbutton" name="btn_submit_register" value="Зарегистрироватся">
+            </form>
+        </section>
+    </div>
+
+    <!-- Контактная информация (footer) -->
+	<?php
+        include('footer.php');
+    ?>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://github.com/simplefocus/FlowType.JS/blob/master/flowtype.js'></script>
+    <script src="./src/js/jquery.maskedinput.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            /*добавляем маску к input с ID = phone*/
+            $("#phone").mask("+7 (999) 999-99-99");
+            $("#birdth").mask("99.99.9999");
+            $("#zip_index").mask("999999");
+        })
+    </script>
+    <script src="./src/js/script.js"></script>
+</body>
+<!-- by Sadykov Kamil (vk.com/coolermgdn) -->
+</html>

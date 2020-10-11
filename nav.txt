@@ -1,0 +1,20 @@
+Условие для шапки
+
+<?php
+    if ( is_home() ){
+        if ( isset ($_SESSION['logged_user']) ){
+            include('nav-home-auth.php');
+        }
+        else{
+            include('nav-home.php');
+        }
+    }
+    else {
+        if ( isset ($_SESSION['logged_user']) ){
+            include('nav-auth.php');
+        }
+        else{
+            include('nav.php');
+        }
+    }
+?>
