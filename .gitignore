@@ -1,0 +1,14 @@
+
+# compiled output
+/dist
+
+# dependencies
+/node_modules
+
+# System Files
+.DS_Store
+Thumbs.db
+/.vs
+
+# package-lock
+package-lock.json
