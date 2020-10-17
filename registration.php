@@ -25,7 +25,7 @@
         <section id="section-reg">
             <a class="about-text5" display="block">Личный кабинет</a><br>
 
-            <form class="formreg" id='formreg' method="post" action="reg.php"> 
+            <form class="formreg" id='formreg' method="post" action="src/php/user_registration.php">
                 
                 <div class="switch_lk">
                     <a href="login.php" class="about-text5 switch_lk_ref">Вход</a>
@@ -36,17 +36,17 @@
                 
                 <div class="inputs">
                     <p>Фамилия<span class="redtext">*</span></p>
-                    <input type="text" name="s_name" placeholder="Ваша фамилия" required>
+                    <input type="text" name="lastname" placeholder="Ваша фамилия" required>
                 </div>
 
                 <div class="inputs">
                     <p>Имя<span class="redtext">*</span></p>
-                    <input type="text" name="f_name" placeholder="Ваше имя" required>
+                    <input type="text" name="firstname" placeholder="Ваше имя" required>
                 </div>
 
                 <div class="inputs">
                     <p>Отчество</p>
-                    <input type="text" name="p_name" placeholder="Ваше отчество">
+                    <input type="text" name="patronymic" placeholder="Ваше отчество">
                 </div>
                     
                 <div class="inputs">
@@ -60,35 +60,35 @@
                     
                 <div class="inputs">
                     <p>Дата рождения<span class="redtext">*</span></p>
-                    <input type="text" name="birdth" id='birdth' placeholder="дд.мм.гггг" required> <br>
+                    <input type="text" name="birthdate" id='birdth' placeholder="дд.мм.гггг" required> <br>
                 </div>
 
                 <a class="about-text2" display="block">Учебное заведение</a><br>
 
                 <div class="inputs">
                     <p>Регион РФ<span class="redtext">*</span></p>
-                    <input type="text" name="region" placeholder="Номер вашего региона" maxlength="3" required>
+                    <input type="text" name="region_id" placeholder="Номер вашего региона" maxlength="3" required>
                 </div>
 
                 <div class="inputs">
                     <p>Населенный пункт<span class="redtext">*</span></p>
-                    <input  type="text" name="edu_locality" placeholder="(Город, село, хутор и т.п.)" required>
+                    <input  type="text" name="edu_city" placeholder="(Город, село, хутор и т.п.)" required>
                 </div>
 
                 <div class="inputs">
                     <p>Класс<span class="redtext">*</span></p>
-                    <select class="select" name="class" placeholder="В каком классе вы обучаетесь" required>
+                    <select class="select" name="class_number" placeholder="В каком классе вы обучаетесь" required>
                         <option value="" selected="selected" disabled="disabled">Ваш класс</option>
                         <option value="9">9</option>
                         <option value="10">10</option>
                         <option value="11">11</option>
-                        <option value="Не школьник">Не школьник</option>
+                        <option value="0">Не школьник</option>
                     </select>
                 </div>
 
                 <div class="inputs">
                     <p>Учебное заведение</p>
-                    <input  type="text" name="edu" placeholder="Название учебного заведения">
+                    <input  type="text" name="edu_name" placeholder="Название учебного заведения">
                 </div>
 
                 <div class="inputs">
@@ -112,12 +112,12 @@
                 
                 <div class="inputs">
                     <p>Почтовый индекс<span class="redtext">*</span></p>
-                    <input  type="text" name="zip_index" id='zip_index' placeholder="Почтовый индекс" maxlength="6" required>
+                    <input  type="text" name="post_index" id='zip_index' placeholder="Почтовый индекс" maxlength="6" required>
                 </div>
                     
                 <div class="inputs">
                     <p>Населенный пункт<span class="redtext">*</span></p>
-                    <input  type="text" name="locality" placeholder="(Город, село, хутор и т.п.)" required>
+                    <input  type="text" name="city" placeholder="(Город, село, хутор и т.п.)" required>
                 </div>
                 <div class="inputs">
                     <p>Улица<span class="redtext">*</span></p>
@@ -147,7 +147,7 @@
 -->
 
                 <p class="usersconf" >Нажимая кнопку «Зарегистрироваться», Вы автоматически соглашаетесь с <a id='mailref' target="_blank" href="documents/Politica_confidecialnosti.docx">политикой конфиденциальности</a> и даете свое согласие на обработку персональных данных. Ваши данные не будут переданы третьим лицам.</p>
-                <input type="submit" id="regbutton" name="btn_submit_register" value="Зарегистрироватся">
+                <input type="submit" id="regbutton" name="btn_submit_register" value="Зарегистрироваться">
             </form>
         </section>
     </div>
