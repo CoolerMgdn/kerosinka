@@ -20,7 +20,7 @@ function checkAndPrepareParams($src, $required_params = [], $optional_params = [
      */
     foreach ($required_params as $value) {
         if (!array_key_exists($value, $src)) {
-            makeFailure('Неправильные параметры запроса');
+            die('Неправильные параметры запроса');
         }
         $vars[$value] = $src[$value];
     }
