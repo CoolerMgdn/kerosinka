@@ -33,3 +33,5 @@ create table USER_INFO
 );
 
 alter table USER_INFO add constraint foreign key (REG_ID) references USER_REGISTER(ID);
+
+ALTER TABLE USER_INFO CONVERT TO CHARACTER SET utf8;
