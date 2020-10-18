@@ -451,7 +451,7 @@ body {
   margin: 20px 5px 20px 0;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "fio fio" "text fromserver" "btn btn";
+      grid-template-areas: "fio fio" "text fromserver" "btn btn" "exit exit";
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
@@ -529,6 +529,41 @@ body {
 
 .sectionlk-info-btn a.cd-link:hover {
   background: #1E3450;
+}
+
+.sectionlk-info-exit {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn;
+  margin: 20px 5px 20px 0;
+}
+
+.sectionlk-info-exit a {
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 10px #000;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  width: 100%;
+}
+
+.sectionlk-info-exit a.cd-signin, .sectionlk-info-exit a.cd-exit {
+  padding: .6em 1.2em;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.5em;
+  background: #C13500;
+  border: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.sectionlk-info-exit a.cd-signin:hover, .sectionlk-info-exit a.cd-exit:hover {
+  background: #8F2607;
 }
 
 /* Блок регистрации(авторизации) */
