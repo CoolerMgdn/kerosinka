@@ -41,8 +41,8 @@ body {
   background: linear-gradient(#1E3450, #1E3450);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
   position: fixed;
   z-index: 10;
   -webkit-transition: all 0.3s;
@@ -234,7 +234,8 @@ body {
 #section03,
 #section-questions,
 #section-doc,
-#section-reg {
+#section-reg,
+#sectionlk {
   width: 1024px;
   max-width: 1840px;
   padding: 10px 50px;
@@ -372,7 +373,7 @@ body {
 #section04 .formfooter .a-footer__col p {
   color: #f2f2f2;
   text-shadow: 1px 1px 10px #000;
-  border-bottom: 2px solid #1D6373;
+  border-bottom: 2px solid #13456E;
   padding-bottom: 10px;
 }
 
@@ -436,6 +437,97 @@ body {
   background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
   padding-bottom: 500px;
+}
+
+/* Блок личного кабинета */
+#sectionlk {
+  background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
+  background: linear-gradient(#13456E, #13456E);
+  overflow: hidden;
+  padding-bottom: 500px;
+}
+
+.sectionlk-info {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "fio fio" "text fromserver" "btn btn";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.sectionlk-info-fio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fio;
+  border-bottom: 2px solid #e3e3e3;
+  width: auto;
+  text-align: left;
+}
+
+.sectionlk-info-fio p {
+  text-align: left !important;
+  margin: 20px 5px 20px 0;
+  font-size: 25px;
+}
+
+.sectionlk-info-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  width: auto;
+  text-align: left;
+}
+
+.sectionlk-info-text p {
+  text-align: left !important;
+}
+
+.sectionlk-info-fromserver {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: fromserver;
+  text-align: left;
+  overflow: hidden;
+}
+
+.sectionlk-info-fromserver p {
+  text-align: left !important;
+}
+
+.sectionlk-info-btn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: btn;
+  margin: 20px 5px 20px 0;
+}
+
+.sectionlk-info-btn a {
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 10px #000;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  width: 100%;
+}
+
+.sectionlk-info-btn a.cd-link {
+  padding: .6em 1em;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.5em;
+  background: #246498;
+  border: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.sectionlk-info-btn a.cd-link:hover {
+  background: #1E3450;
 }
 
 /* Блок регистрации(авторизации) */
@@ -550,20 +642,6 @@ body {
 }
 
 /*============================ /Блоки ============================*/
-/* Блок ЛК */
-#sectionlk {
-  width: 100vw;
-  height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4995A6), color-stop(#1D6373), to(#103240));
-  background: linear-gradient(#4995A6, #1D6373, #103240);
-}
-
 /*============================ Шрифты ============================*/
 a {
   color: #acb7c0;
@@ -1175,7 +1253,7 @@ p {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #2f889a;
+  border-right: 7px solid #246498;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1203,7 +1281,7 @@ p {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #2f889a;
+    border-left-color: #246498;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -1224,7 +1302,7 @@ p {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #2f889a;
+    border-right-color: #246498;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

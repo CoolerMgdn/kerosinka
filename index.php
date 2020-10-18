@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- by Sadykov Kamil (vk.com/coolermgdn) -->
+<!-- by Sadykov Kamil (Kamil.sadykov@mail.ru) -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
 					    <h2>Отборочный этап</h2>
                         <p>Отборочный этап олимпиады пройдет в online. Длительность Олимпиады – 45 минут.</p>
                         <a href="questions.php" class="cd-read-more">Подробнее</a>
-                        <span class="cd-date" id="olimpdate">Май</span>
+                        <span class="cd-date" id="olimpdate">Ноябрь</span>
 				    </div> <!-- cd-timeline-content -->
 			    </div> <!-- cd-timeline-block -->
 		        <!-- Заключительный этап -->
@@ -64,7 +64,7 @@
 					    <h2>Заключительный этап</h2>
 					    <p>Заключительный этап олимпиады будет проходить на базе Российского государственного университета нефти и газа (НИУ) имени И.М. Губкина.</p>
 					    <a href="questions.php" class="cd-read-more">Подробнее</a>
-					    <span class="cd-date" id="olimpdate">Сентябрь</span>
+					    <span class="cd-date" id="olimpdate">Декабрь</span>
 				    </div> <!-- cd-timeline-content -->
 			    </div> <!-- cd-timeline-block -->
 		    </section> <!-- cd-timeline -->
@@ -130,5 +130,5 @@
     <script src="./src/js/jquery.maskedinput.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
-<!-- by Sadykov Kamil (vk.com/coolermgdn) -->
+<!-- by Sadykov Kamil (Kamil.sadykov@mail.ru) -->
 </html>
