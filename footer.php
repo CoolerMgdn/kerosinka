@@ -21,6 +21,14 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://github.com/simplefocus/FlowType.JS/blob/master/flowtype.js'></script>
 <script src="./src/js/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function() {
+        /*добавляем маску к input с ID = phone*/
+        $("#phone").mask("+7 (999) 999-99-99");
+        $("#birdth").mask("99.99.9999");
+        $("#zip_index").mask("999999");
+    })
+</script>
 <script src="./src/js/script.js"></script>
 </body>
 <!-- by Sadykov Kamil (Kamil.sadykov@mail.ru) -->

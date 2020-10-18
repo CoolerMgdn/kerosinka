@@ -1,6 +1,6 @@
 <?php
 require_once('include.php');
-require('nav.php');
+require('header.php');
 
 if (!$_SESSION['USER_ID'] || !$_SESSION['REGISTRATION_ID']) {
     die('Войдите в лк!');

@@ -1,5 +1,5 @@
 <?php
-require('nav.php');
+require('header.php');
 
 $header = "
     <!DOCTYPE html>

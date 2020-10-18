@@ -14,7 +14,7 @@
 <body>
     <!-- Шапка -->
     <?php
-        include('nav.php');
+        include('header.php');
     ?>
 
     <!-- РГУНГ -->
