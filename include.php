@@ -1,5 +1,9 @@
 <?php
 
+const HOST = 'localhost';
+const USER = 'andrew';
+const PASSWORD = 'dolphin';
+
 /**
  * Функция для проверки присланных в php-файл параметров
  *
@@ -28,27 +32,5 @@ function checkAndPrepareParams($src, $required_params = [], $optional_params = [
         }
     }
     return $vars;
-}
-
-/**
- * Ответ клиенту с сообщением об ошибке.
- * Используется при работе с Ajax запросами (Ext.data.Store,Ext.Ajax,Ext.form.Basic)
- * @param  string $msg Сообщение об ошибке
- * @return null
- */
-function makeFailure($msg)
-{
-    die(json_encode(['success' => false, 'msg' => $msg]));
-}
-
-/**
- * Ответ клиенту с сообщением об успешном выполнении.
- * Используется при работе с Ajax запросами (Ext.Ajax,Ext.form.Basic)
- * @param  string $msg Сообщение
- * @return null
- */
-function makeSuccess($msg)
-{
-    die(json_encode(['success' => true, 'msg' => $msg]));
 }
 

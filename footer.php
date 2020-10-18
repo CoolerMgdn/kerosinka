@@ -17,3 +17,11 @@
         </div>
     </form>
 </section>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://github.com/simplefocus/FlowType.JS/blob/master/flowtype.js'></script>
+<script src="./src/js/jquery.maskedinput.min.js"></script>
+<script src="./src/js/script.js"></script>
+</body>
+<!-- by Sadykov Kamil (Kamil.sadykov@mail.ru) -->
+</html>
