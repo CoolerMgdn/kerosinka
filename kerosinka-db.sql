@@ -4,6 +4,7 @@ create table USER_REGISTER
     PASSWORD     VARCHAR(4000),
     EMAIL        VARCHAR(100),
     USER_ID      INT,
+    CASE_NUMBER  INT(1),
     ATTEND_COUNT INT(1),
     ATTEND_DATA  DATE
 );
