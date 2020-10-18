@@ -532,10 +532,10 @@ body {
 }
 
 .sectionlk-info-exit {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: btn;
+  grid-area: exit;
   margin: 20px 5px 20px 0;
 }
 
