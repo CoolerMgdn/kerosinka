@@ -338,9 +338,10 @@ body {
 #sectionlk {
   background: linear-gradient($main1, $main2);
   overflow: hidden;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 }
 .sectionlk-info{
+  margin: 20px 5px 20px 0;
   display: grid;
   grid-template-areas: 
     "fio fio"

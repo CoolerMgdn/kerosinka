@@ -444,10 +444,11 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#13456E), to(#13456E));
   background: linear-gradient(#13456E, #13456E);
   overflow: hidden;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 }
 
 .sectionlk-info {
+  margin: 20px 5px 20px 0;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "fio fio" "text fromserver" "btn btn";
