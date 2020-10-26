@@ -83,6 +83,53 @@ jQuery(document).ready(function($){
 	});
 });
 
+//Ограничение чекбоксов
+document.querySelectorAll(".checkbox2 input[type='checkbox']").forEach(el => {
+    el.addEventListener("click", function(e){
+        if (this.checked) {
+            var count = this.closest(".checkbox2").querySelectorAll("input[type='checkbox']:checked").length;
+            if (count > 2)
+                this.checked = false;
+        }
+    });
+});
+document.querySelectorAll(".checkbox3 input[type='checkbox']").forEach(el => {
+    el.addEventListener("click", function(e){
+        if (this.checked) {
+            var count = this.closest(".checkbox3").querySelectorAll("input[type='checkbox']:checked").length;
+            if (count > 3)
+                this.checked = false;
+        }
+    });
+});
+document.querySelectorAll(".checkbox4 input[type='checkbox']").forEach(el => {
+    el.addEventListener("click", function(e){
+        if (this.checked) {
+            var count = this.closest(".checkbox4").querySelectorAll("input[type='checkbox']:checked").length;
+            if (count > 4)
+                this.checked = false;
+        }
+    });
+});
+document.querySelectorAll(".checkbox5 input[type='checkbox']").forEach(el => {
+    el.addEventListener("click", function(e){
+        if (this.checked) {
+            var count = this.closest(".checkbox5").querySelectorAll("input[type='checkbox']:checked").length;
+            if (count > 5)
+                this.checked = false;
+        }
+    });
+});
+document.querySelectorAll(".checkbox7 input[type='checkbox']").forEach(el => {
+    el.addEventListener("click", function(e){
+        if (this.checked) {
+            var count = this.closest(".checkbox5").querySelectorAll("input[type='checkbox']:checked").length;
+            if (count > 7)
+                this.checked = false;
+        }
+    });
+});
+
 //Проверка Email и пароля на валидность
 $(document).ready(function(){
         "use strict";
@@ -186,4 +233,5 @@ $(document).ready(function(){
             }
 
         });
+
     });

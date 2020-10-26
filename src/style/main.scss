@@ -513,9 +513,64 @@ body {
 .password-control.view {
 	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
 }
-
-.formtest{ //тесты
+//Форма тестов
+.formtest{ 
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  padding: 0 50px;
+  align-items: center;
+  margin-bottom: 50px !important;
+  & .about-text3{
+    text-align: center !important;
+  }
+  a, p, input, select {
+    //width: 100%;
+    border-radius: 0.5em;
+  }
+  label input{
+    margin: 10px 0px !important;
+  }
+  a, p, select, & .input_text, & .test_finish {
+    width: 100%;
+  } 
+  img{
+    width: 100%;
+  }
+  //& .input_text{
+    //margin-left: -20px !important;
+  //}
+  .inputs{
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+    //display: flex !important;
+    //flex-direction: column !important;
+    //justify-content: space-between;
+    //label{
+      //display: flex !important;
+      //flex-direction: row !important;
+      //justify-content: space-between;
+    //}
+    input {
+      margin: 5px 0;
+      padding: 10px 10px;
+      border: unset;
+      border-bottom: 2px solid #e3e3e3;
+      outline: none;
+    }
+    select{
+      padding: 10px 8px;
+    }
+    a, p, input, select {
+      font-size: 13px;
+    }
+  }
+  .usersconf{
+    padding-top: 30px;
+  }
 }
 /*============================ /Блоки ============================*/
 
@@ -866,7 +921,7 @@ p {
   #section-doc{
     padding: 10px 30px;
   }
-  .formreg {
+  .formreg, .formtest {
     padding: 0 0;
   }
 }

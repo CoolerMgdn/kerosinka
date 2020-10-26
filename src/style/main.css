@@ -674,7 +674,67 @@ body {
 }
 
 .formtest {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
+  padding: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px !important;
+}
+
+.formtest .about-text3 {
+  text-align: center !important;
+}
+
+.formtest a, .formtest p, .formtest input, .formtest select {
+  border-radius: 0.5em;
+}
+
+.formtest label input {
+  margin: 10px 0px !important;
+}
+
+.formtest a, .formtest p, .formtest select, .formtest .input_text, .formtest .test_finish {
+  width: 100%;
+}
+
+.formtest img {
+  width: 100%;
+}
+
+.formtest .inputs {
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.formtest .inputs input {
+  margin: 5px 0;
+  padding: 10px 10px;
+  border: unset;
+  border-bottom: 2px solid #e3e3e3;
+  outline: none;
+}
+
+.formtest .inputs select {
+  padding: 10px 8px;
+}
+
+.formtest .inputs a, .formtest .inputs p, .formtest .inputs input, .formtest .inputs select {
+  font-size: 13px;
+}
+
+.formtest .usersconf {
+  padding-top: 30px;
 }
 
 /*============================ /Блоки ============================*/
@@ -1065,7 +1125,7 @@ p {
   #section-doc {
     padding: 10px 30px;
   }
-  .formreg {
+  .formreg, .formtest {
     padding: 0 0;
   }
 }
