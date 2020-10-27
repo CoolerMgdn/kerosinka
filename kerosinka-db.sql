@@ -35,6 +35,7 @@ create table USER_INFO
 create table USER_TESTS
 (
     USER_ID         INT KEY,
+    VARIANT         INT(1),
     TASK_1          INT(10),
     TASK_2          INT(10),
     TASK_3          INT(10),
