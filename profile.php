@@ -64,6 +64,10 @@ $mainPage = "
                 <div class=\"sectionlk-info-btn\">
                     <a class=\"cd-link\" href=\"profile-info.php\">Посмотреть всю информацию</a>
                 </div>
+                <a class=\"about-text1 sectionlk-info-testinfo\" >ВНИМАНИЕ! <br> Тестирование можно пройти лишь 1 раз. На выполнение онлайн-этапа олимпиады дается … минут. Удачи!</a>
+                <div class=\"sectionlk-info-test\">
+                    <a class=\"cd-link\" href=\"test.php\">Начать тестирование</a>
+                </div>
                 <div class=\"sectionlk-info-exit\">
                     <a class=\"cd-signin\" href=\"src/php/user_disconnect.php\">Выйти</a>
                 </div>
