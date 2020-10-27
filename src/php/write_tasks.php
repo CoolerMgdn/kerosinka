@@ -41,14 +41,30 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlInsertTests = "
-    insert into USER_TESTS
-        (user_id, task_1, task_2, task_3, task_4, task_5, task_6, task_7, task_8, task_9, task_10,
-         task_11, task_12, task_13, task_14, task_15, task_16, task_17, task_18, task_19, task_20, task_21, task_22)
-    values
-        ({$userId}, {$answers[0]}, {$answers[1]}, {$answers[2]}, {$answers[3]}, {$answers[4]}, {$answers[5]}, 
-        {$answers[6]}, {$answers[7]}, {$answers[8]}, {$answers[9]}, {$answers[10]}, {$answers[11]}, {$answers[12]}, 
-        {$answers[13]}, {$answers[14]}, '{$answers[15]}', '{$answers[16]}', '{$answers[17]}', '{$answers[18]}', '{$answers[19]}', 
-        '{$answers[20]}', '{$answers[21]}'); 
+    update USER_TESTS
+        task_1 = {$answers[0]}, 
+        task_2 = {$answers[1]}, 
+        task_3 = {$answers[2]}, 
+        task_4 = {$answers[3]}, 
+        task_5 = {$answers[4]}, 
+        task_6 = {$answers[5]}, 
+        task_7 = {$answers[6]}, 
+        task_8 = {$answers[7]}, 
+        task_9 = {$answers[8]}, 
+        task_10 = {$answers[9]}, 
+        task_11 = {$answers[10]}, 
+        task_12 = {$answers[11]}, 
+        task_13 = {$answers[12]}, 
+        task_14 = {$answers[13]}, 
+        task_15 = {$answers[14]}, 
+        task_16 = '{$answers[15]}', 
+        task_17 = '{$answers[16]}', 
+        task_18 = '{$answers[17]}', 
+        task_19 = '{$answers[18]}', 
+        task_20 = '{$answers[19]}', 
+        task_21 = '{$answers[20]}', 
+        task_22 = '{$answers[21]}'
+    where user_id = {$userId}; 
 ";
 mysqli_query($conn, $sqlInsertTests);
 
