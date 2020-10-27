@@ -203,12 +203,12 @@ $mainPage = "
                     <label>Вахтовый посёлок, где начинается холодная Арктика и кипит жаркая работа. По переписи 2002 года население посёлка составляло около 19 человек, на данный момент – 22000. 
                     Прирост населения связан с развитием проекта по производству СПГ. На территории посёлка находятся одноименный международный аэропорт и порт.</label>
                     <br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[15][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[15]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">17. Перечислите не менее 5 объектов производственного экологического контроля? Дайте развернутый ответ в виде 5-6 предложений.</a><br>
                 <div class=\"inputs\">
-                    <input type=\"text\" class= 'input_text' name=\"tests[16][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[16]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">18. Прочитайте текст и заполните пропуск. Укажите аварию и ее территориальное расположение. </a><br>
@@ -216,7 +216,7 @@ $mainPage = "
                     <label>«_________________________________  20 апреля 2010 года был вызван утечкой природного газа, что в итоге привело к взрыву, в результате которого одиннадцать человек погибли. 
                     Платформа затонула через два дня. После того, как приблизительно 672 000 тонн достигли моря, разлив нефти был остановлен 16 июля 2010 года.</label>
                     <br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[17][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[17]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">19. Установите соответствия. Ответ дайте в виде последовательности слов, разделяя  пробелами.</a><br>
@@ -228,7 +228,7 @@ $mainPage = "
                     <label>
                         1. Ванино<br>2. Нефть<br>3. Санкт-Петербург<br>4. Уголь<br>5. Новороссийск<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[18][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[18]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">20. Установите соответствие. Ответ дайте в виде последовательности букв, без пробелов.</a><br>
@@ -239,7 +239,7 @@ $mainPage = "
                     <label>
                         1. Нефтяной газ<br>2. Эфир петролейный<br>3. Бензин<br>4. Лигроин<br>5. Керосин<br>6. Газойль<br>7. Соляр<br>8. Бензол<br>9. Толуол<br>10. Озокерит<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[19][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[19]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text5\" display=\"block\">Часть 3</a><br>
@@ -249,12 +249,12 @@ $mainPage = "
                 <div class=\"inputs\">
                     <label>Некоторые способы добычи нефти (зачастую самые эффективные) приводят к образованию трещин в горной породе из которой добывается нефть или газ. 
                     Случается, что некоторые трещины выходят на поверхность и из нее начинает выделяться газ. Такое явление называется «травящая скважина». Это может быть причиной образования «газовых озер» и создавать взрывоопасные ситуации. </label><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[20][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[20]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">22.  Как нефть и нефтепродукты оказывают влияние на природные почвенно-грунтовые воды?</a><br>
                 <div class=\"inputs\">
-                    <input type=\"text\" class= 'input_text' name=\"tests[21][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[21]\" placeholder=\"Ответ\">
                 </div>
                 <br><br><br>
 

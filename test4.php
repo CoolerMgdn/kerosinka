@@ -214,7 +214,7 @@ $mainPage = "
                 <a class=\"about-text2\" display=\"block\">16.  Какая технология очистки загрязненных почв представлена на схеме? </a><br>
                 <div class=\"inputs\">
                     <img src=\"./src/img/4var16.png\"><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[15][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[15]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">17.  Прочитайте текст. По представленным характеристикам определите субъект РФ и его соседей. Ответ представьте в виде перечислений словосочетаний через запятую.</a><br>
@@ -225,7 +225,7 @@ $mainPage = "
                     (Д) – западный сосед имеет уникальную минерально-сырьевую базу. На его территории разрабатывается как топливное, так и рудное сырьё, ведется его обогащение и передел.
                     </label>
                     <br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[16][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[16]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">18. Прочитайте текст. Укажите местоположение описанной нефтяной катастрофы.</a><br>
@@ -233,7 +233,7 @@ $mainPage = "
                     <label>«Эта катастрофа на сегодняшний день является самой большой загрязненной нефтью территорией суши и самым большим количеством нефти в мире. 
                     Несколько разливов нефти и аварий на трубопроводах и конвейерах являются причинами крупных разливов нефти. Всего в окружающую среду приходится поступление 15 300 000 тонн в год». 
                     </label><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[17][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[17]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">19. На схеме показан круговорот фосфора: черные стрелки – поступление растворимых фосфатов в тела растений, 
@@ -245,7 +245,7 @@ $mainPage = "
                     <label>
                         A. Бактерии<br>B. Растворимые фосфаты<br>C. Нерастворимые фосфаты<br>D. Почвенные растворы<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[18][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[18]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">20. Установите соответствие: фракция нефти – число атомов углерода. Ответ дайте в виде последовательности букв, без пробелов.</a><br>
@@ -256,7 +256,7 @@ $mainPage = "
                     <label>
                         1. 20+<br>2. 5-6<br>3. 10-15<br>4. 1-4<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[19][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[19]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text5\" display=\"block\">Часть 3</a><br>
@@ -271,12 +271,12 @@ $mainPage = "
                     Похожее «газовое озеро» Киву (на дне которого скапливается газ), но больших масштабов, находится в  Африке  и представляет огромную опасность для жителей близлежащих поселений.
                     </label><br><br>
                     <img src=\"./src/img/4var21.png\"><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[20][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[20]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">22.  Какие последствия для растительного покрова несет нефтяное загрязнение?</a><br>
                 <div class=\"inputs\">
-                    <input type=\"text\" class= 'input_text' name=\"tests[21][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[21]\" placeholder=\"Ответ\">
                 </div>
                 <br><br><br>
 

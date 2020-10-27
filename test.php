@@ -203,20 +203,20 @@ $mainPage = "
                 <a class=\"about-text2\" display=\"block\">16. Ознакомьтесь со статьей «Методика выявления и оценки нефтепродуктового загрязнения геологической среды», Круподеров И.В.. Какие существуют методы выявление в геологической среде очагов всех форм нефтяного загрязнения? Приведите не менее двух примеров.</a><br>
                 <div class=\"inputs\">
                     <img src=\"./src/img/1var16.png\" alt='12321312'><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[15][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[15]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">17. Ознакомьтесь с презентацией «Перспективные технологии идентификации и ликвидации глубинных загрязнений при добыче и переработке нефти». Какой способ борьбы с образованием линз и загрязнением подземных вод нефтепродуктами представлен на рисунке?</a><br>
                 <div class=\"inputs\">
                     <label><a id='docref1' target=\"_blank\" href=\"https://www.gubkin.ru/faculty/chemical_and_environmental/chairs_and_departments/industrial_ecology/News/Ostakh.pdf\">Ссылка на презентацию</a></label> <br><br>
                     <img src=\"./src/img/1var17.png\"><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[16][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[16]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">18. Прочитайте ниже приведенный текст. О каком нефтяном месторождении идет речь?</a><br>
                 <div class=\"inputs\">
                     <label>«10 февраля 1983 года танкер столкнулся с нефтяной платформой. Поскольку в то время произошла первая война в Персидском заливе между Ираком и Ираном, примерно через месяц иракские вертолеты обстреляли платформу, что привело к разливу нефти. Только в сентябре того же года техники смогли устранить повреждения из-за продолжающейся войны. Результат: разлито 260 000 тонн сырой нефти».</label><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[17][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[17]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">19. Установите соответствие: полезное ископаемое – месторождение – страна, на территории которой оно находится. Ответ дайте в виде последовательности букв и цифр без пробелов.</a><br>
@@ -230,7 +230,7 @@ $mainPage = "
                     <label>
                         I. Казахстан<br>II. Россия<br>III. Узбекистан<br>IV. Чили<br>V. Автралия<br>  
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[18][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[18]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">20. Установите соответствие. Ответ дайте в виде последовательности букв, без пробелов.</a><br>
@@ -241,7 +241,7 @@ $mainPage = "
                     <label>
                         1. Петролейная<br>2. Бензиновая<br>3. Вакуумный газолий<br>4. Гудрон<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[19][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[19]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text5\" display=\"block\">Часть 3</a><br>
@@ -250,12 +250,12 @@ $mainPage = "
                 <a class=\"about-text2\" display=\"block\">21.  Прочитайте ниже приведенный текст. Какие последствия приносят ежегодные загрязнения? Приведите методы борьбы с ними.</a><br>
                 <div class=\"inputs\">
                     <label>Индийский Гоа традиционно славится своими комфортными пляжами с белоснежным песком, чистой и тёплой водой и отличным сервисом. Но раз в год происходит разлив мазута на пляжи Гоа из-за недалеко находящейся станции по очистке нефтеперевозящих танкеров.</label><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[20][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[20]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">22.  Как нефть и нефтепродукты оказывают влияние на природные поверхностные воды?</a><br>
                 <div class=\"inputs\">
-                    <input type=\"text\" class= 'input_text' name=\"tests[21][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[21]\" placeholder=\"Ответ\">
                 </div>
                 <br><br><br>
 

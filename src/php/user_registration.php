@@ -26,7 +26,7 @@ extract(checkAndPrepareParams(
 $sex = $sex == 'Муж' ? 'M' : 'F';
 $apartment = $apartment ? $apartment : 0;
 $password = generateRandomPassword(8);
-$caseNumber = rand(1, 4);
+$variant = rand(1, 4);
 
 $conn = mysqli_connect(HOST, USER, PASSWORD);
 if (!$conn) {
@@ -48,9 +48,9 @@ if ($rawResultChecking->num_rows) {
 
 $sqlInsertRegister = "
     insert into USER_REGISTER
-        (password, email, case_number)
+        (password, email, variant)
     values
-        ('{$password}', '{$email}', {$caseNumber}); 
+        ('{$password}', '{$email}', {$variant}); 
 ";
 mysqli_query($conn, $sqlInsertRegister);
 

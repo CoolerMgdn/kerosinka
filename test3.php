@@ -207,7 +207,7 @@ $mainPage = "
                     соответствующим городу федерального значения РФ, с особым режимом безопасного функционирования объектов, предприятий и организаций, а также проживания граждан.
                     </label>
                     <br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[15][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[15]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">17.  Прочитайте текст. Назовите химический элемент, о котором идет речь.</a><br>
@@ -216,7 +216,7 @@ $mainPage = "
                     Он берёт начало из перекрытого льдом солёного озера, образовавшегося 1,5 млн лет назад. 
                     Вода источника имеет своеобразный кроваво-красный цвет благодаря этому химическому элементу.
                     </label><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[16][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[16]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">18. Прочитайте текст. Назовите водный объект, в котором произошел разлив нефти.</a><br>
@@ -227,7 +227,7 @@ $mainPage = "
                     К тому времени уже было разлито от 800 000 до 1 700 000 тонн сырой нефти.»
                     </label>
                     <br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[17][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[17]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">19. В левой части схемы представлен естественный механизм парникового эффекта. В правой части схемы представлен «вклад» человека в усиление парникового эффекта. Соотнесите   следующие элементы с пропусками на правой части схемы. Ответ дайте в виде последовательного перечисление элементов через запятую.</a><br>
@@ -236,7 +236,7 @@ $mainPage = "
                     <label>
                         1. Фреоны<br>2. CH4<br>3. CO2<br>4. NO2<br>5. O3<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[18][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[18]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">20. Установите соответствие. Фракция нефти – применение. Ответ дайте в виде последовательности букв, без пробелов.</a><br>
@@ -247,7 +247,7 @@ $mainPage = "
                     <label>
                         1. Получение смазочных масел. Жидкое топливо    в    котельных установках<br>2. Топливо для двигателей внутреннего сгорания, растворитель.<br>3. Дизельное и реактивное топливо<br>4. Газообразное топливо<br>5. Керосин<br>6. Горючее для трактора<br>
                     </label><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[19][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[19]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text5\" display=\"block\">Часть 3</a><br>
@@ -256,12 +256,12 @@ $mainPage = "
                 <a class=\"about-text2\" display=\"block\">21.  Опишите, какие процессы указаны на рисунке. Поясните на каких этапах нефтегазового производства возникают данные явления и какие существуют методы борьбы с ними?</a><br>
                 <div class=\"inputs\">
                     <img src=\"./src/img/3var21.png\"><br><br>
-                    <input type=\"text\" class= 'input_text' name=\"tests[20][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[20]\" placeholder=\"Ответ\">
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">22.  Как нефть и нефтепродукты оказывают влияние на природные подземные воды?</a><br>
                 <div class=\"inputs\">
-                    <input type=\"text\" class= 'input_text' name=\"tests[21][]\" placeholder=\"Ответ\">
+                    <input type=\"text\" class= 'input_text' name=\"tests[21]\" placeholder=\"Ответ\">
                 </div>
                 <br><br><br>
 
