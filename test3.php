@@ -2,9 +2,9 @@
 require_once('include.php');
 require('header.php');
 
-//if (!$_SESSION['USER_ID'] || !$_SESSION['REGISTRATION_ID']) {
-    //die('Войдите в лк!');
-//}
+if (!$_SESSION['USER_ID'] || !$_SESSION['REGISTRATION_ID']) {
+    die('Войдите в лк!');
+}
 
 $userId = $_SESSION['USER_ID'];
 
@@ -15,16 +15,24 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
-    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email
-    from USER_INFO i
-    join USER_REGISTER r
-        on r.user_id = i.user_id
-    where i.user_id = {$userId};
+    select t.user_id, t.start_date
+    from USER_TESTS t
+    where t.user_id = {$userId};
 ";
 $rawGetInfo = mysqli_query($conn, $sqlGetInfo);
+if ($rawGetInfo->num_rows) {
+    die('Вы уже проходили тестирование. На эту страницу Вы зайти более не сможете!');
+}
 $userInfo = mysqli_fetch_array($rawGetInfo, MYSQLI_ASSOC);
 
-$classNumber = $userInfo['class_number'] == 0 ? 'Не школьник' : $userInfo['class_number'];
+$timestamp = date("Y-m-d H:i:s");
+$sqlFirstInsert = "
+    insert into USER_TESTS
+        (user_id, start_date)
+    values
+        ({$userId}, {$timestamp});
+";
+mysqli_query($conn, $sqlFirstInsert);
 
 $header = "
     <!DOCTYPE html>

@@ -15,7 +15,7 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
-    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email
+    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email, r.variant
     from USER_INFO i
     join USER_REGISTER r
         on r.user_id = i.user_id
@@ -66,7 +66,7 @@ $mainPage = "
                 </div>
                 <a class=\"about-text1 sectionlk-info-testinfo\" >ВНИМАНИЕ! <br> Тестирование можно пройти лишь 1 раз. На выполнение онлайн-этапа олимпиады дается … минут. Удачи!</a>
                 <div class=\"sectionlk-info-test\">
-                    <a class=\"cd-link\" href=\"test.php\">Начать тестирование</a>
+                    <a class=\"cd-link\" href=\"test". $userInfo['variant'] . ".php\">Начать тестирование</a>
                 </div>
                 <div class=\"sectionlk-info-exit\">
                     <a class=\"cd-signin\" href=\"src/php/user_disconnect.php\">Выйти</a>
