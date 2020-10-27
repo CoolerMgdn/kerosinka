@@ -503,7 +503,7 @@ body {
   margin: 70px 5px 20px 0;
 }
 
-.sectionlk-info-test a {
+.sectionlk-info-test a, .sectionlk-info-test input {
   font-weight: bolder;
   text-decoration: none;
   text-align: center;
@@ -518,7 +518,7 @@ body {
   height: 100px;
 }
 
-.sectionlk-info-test a.cd-link {
+.sectionlk-info-test a.cd-link, .sectionlk-info-test input.cd-link {
   padding: 2.4em;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0.5em;
@@ -528,7 +528,7 @@ body {
   text-transform: uppercase;
 }
 
-.sectionlk-info-test a.cd-link:hover {
+.sectionlk-info-test a.cd-link:hover, .sectionlk-info-test input.cd-link:hover {
   background: #8F2607;
 }
 

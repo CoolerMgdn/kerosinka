@@ -65,9 +65,13 @@ $mainPage = "
                     <a class=\"cd-link\" href=\"profile-info.php\">Посмотреть всю информацию</a>
                 </div>
                 <a class=\"about-text1 sectionlk-info-testinfo\" >ВНИМАНИЕ! <br> Тестирование можно пройти лишь 1 раз. На выполнение онлайн-этапа олимпиады дается … минут. Удачи!</a>
-                <div class=\"sectionlk-info-test\">
-                    <a class=\"cd-link\" href=\"test". $userInfo['variant'] . ".php\">Начать тестирование</a>
-                </div>
+                
+                <form method=\"post\" action=\"src/php/test.php\">
+                    <div class=\"sectionlk-info-test\">
+                        <input type=\"submit\" class=\"cd-link\" href=\"test". $userInfo['variant'] . ".php\" value=\"Начать тестирование\">
+                    </div>
+                </form>
+
                 <div class=\"sectionlk-info-exit\">
                     <a class=\"cd-signin\" href=\"src/php/user_disconnect.php\">Выйти</a>
                 </div>
