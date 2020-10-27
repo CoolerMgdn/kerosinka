@@ -88,7 +88,8 @@ $mainPage = "
 
                 <a class=\"about-text2\" display=\"block\">5.   --------------------------------------------------------------------------------------</a><br>
                 <div class=\"inputs\">
-
+                <label><input type='radio' name='tests[4][]' value='A'> A.</label><br>
+                <label><input type='radio' name='tests[4][]' value='B'> B.</label><br>
                 </div>
 
                 <a class=\"about-text2\" display=\"block\">6. Среди перечисленных населенных пунктов, получивших своё название от соляных промыслов, найдите два города Ближнего Зарубежья.</a><br>
