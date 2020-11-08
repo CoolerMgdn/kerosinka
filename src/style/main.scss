@@ -342,6 +342,7 @@ body {
 }
 .sectionlk-info{
   margin: 20px 5px 20px 0;
+  padding: 10px;
   display: grid;
   grid-template-areas: 
     "fio fio"
@@ -479,7 +480,7 @@ body {
   padding-bottom: 50px;
   justify-content: center;
 }
-.formreg {
+.formreg, .formadmin {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -1357,3 +1358,41 @@ p {
   }
 }
 /*=========================== /Таймлайн ===========================*/
+
+//Админка
+table {
+  min-width: 100%;
+  width: 100%;
+  flex: 1;
+  display: grid;
+  border-collapse: collapse;
+  padding-bottom: 30px;
+  grid-template-columns: 
+    minmax(100px, auto)
+    minmax(100px, auto);
+}
+tbody,
+tr {
+  display: contents;
+}
+td{
+  padding: 10px;
+  width: 100%;
+  white-space: pre-wrap !important;
+  word-wrap: normal;
+}
+th {
+  position: relative;
+  top: 0;
+  text-align: left;
+  font-weight: normal;
+  color: white;
+}
+tr:nth-child(even) td {
+  background: $header1;
+}
+.formadmin {
+  margin-top: 10px;
+  padding: 0 10px !important;
+  margin-bottom: 0px !important;
+}

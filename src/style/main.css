@@ -448,9 +448,10 @@ body {
 
 .sectionlk-info {
   margin: 20px 5px 20px 0;
+  padding: 10px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "fio fio" "text fromserver" "btn btn" "testinfo testinfo" "test test" "exit exit";
+      grid-template-areas: "fio fio" "text fromserver" "btn btn" "testinfo testinfo" "test test" "exit exit";
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
@@ -623,7 +624,7 @@ body {
           justify-content: center;
 }
 
-.formreg {
+.formreg, .formadmin {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,18 +641,18 @@ body {
   margin-bottom: 50px !important;
 }
 
-.formreg a, .formreg p, .formreg input, .formreg select {
+.formreg a, .formreg p, .formreg input, .formreg select, .formadmin a, .formadmin p, .formadmin input, .formadmin select {
   width: 100%;
   border-radius: 0.5em;
 }
 
-.formreg .inputs {
+.formreg .inputs, .formadmin .inputs {
   width: 100%;
   margin-bottom: 5px;
   position: relative;
 }
 
-.formreg .inputs input {
+.formreg .inputs input, .formadmin .inputs input {
   margin: 5px 0;
   padding: 10px 10px;
   border: unset;
@@ -659,15 +660,15 @@ body {
   outline: none;
 }
 
-.formreg .inputs select {
+.formreg .inputs select, .formadmin .inputs select {
   padding: 10px 8px;
 }
 
-.formreg .inputs a, .formreg .inputs p, .formreg .inputs input, .formreg .inputs select {
+.formreg .inputs a, .formreg .inputs p, .formreg .inputs input, .formreg .inputs select, .formadmin .inputs a, .formadmin .inputs p, .formadmin .inputs input, .formadmin .inputs select {
   font-size: 13px;
 }
 
-.formreg .usersconf {
+.formreg .usersconf, .formadmin .usersconf {
   padding-top: 30px;
 }
 
@@ -1537,4 +1538,47 @@ p {
 }
 
 /*=========================== /Таймлайн ===========================*/
+table {
+  min-width: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  border-collapse: collapse;
+  padding-bottom: 30px;
+  -ms-grid-columns: minmax(100px, auto) minmax(100px, auto);
+      grid-template-columns: minmax(100px, auto) minmax(100px, auto);
+}
+
+tbody,
+tr {
+  display: contents;
+}
+
+td {
+  padding: 10px;
+  width: 100%;
+  white-space: pre-wrap !important;
+  word-wrap: normal;
+}
+
+th {
+  position: relative;
+  top: 0;
+  text-align: left;
+  font-weight: normal;
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background: #1E3450;
+}
+
+.formadmin {
+  margin-top: 10px;
+  padding: 0 10px !important;
+  margin-bottom: 0px !important;
+}
 /*# sourceMappingURL=main.css.map */
