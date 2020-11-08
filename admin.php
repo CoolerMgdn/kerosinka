@@ -21,13 +21,15 @@ $header = "
     <div class=\"container\">
         <section id=\"sectionlk\">
             <a class=\"about-text\">Панель администратора</a><br>
-
             <form class='formadmin' id='formadmin' method='post' action=''>
                     <div class=\"inputs\">
                         <input  type='text' name='email' placeholder='id пользователя' required>
                     </div>
                     <input type=\"submit\" id=\"authbutton\" name=\"btn_submit_register\" value=\"Вывести результаты\">
-                </form>
+            </form>
+
+            <div id='javascript_countdown_time'></div>
+
             <div class=\"sectionlk-info\">
                 <div class=\"sectionlk-info-text\">
                     <p class=\"about-text2\">

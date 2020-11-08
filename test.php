@@ -43,6 +43,20 @@ $header = "
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>Онлайн этап олимпиады</title>
+            <script src='https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js'></script>
+            <script>
+                set_onbeforeunload = function(){
+                    return true;
+                };
+            $(document).ready(function(){
+                $(document).on('input', ':input', function() {
+                    window.onbeforeunload = set_onbeforeunload;
+                });
+                $('form').submit(function(){
+                    window.onbeforeunload = null;
+                });
+            });
+            </script>
     " . $header;
 
 $mainPage = file_get_contents((__DIR__) . '/tests/test' . $variant . '.html');
