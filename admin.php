@@ -1,4 +1,5 @@
 <?php
+require_once('include.php');
 require('nav-home.php');
 
 
@@ -19,10 +20,8 @@ $header = "
     <!-- Панель администратора -->
     <div class=\"container\">
         <section id=\"sectionlk\">
-            <a class=\"about-text\">Панель администратора</a><br><br><br><br>
-            <form class='formadmin' id='formadmin' method='post' action=''>
             <a class=\"about-text\">Панель администратора</a><br>
-            <form class='formadmin' id='formadmin' method='post' action='src/php/read_info.php'>
+            <form class='formadmin' id='formadmin' method='post' action=''>
                     <div class=\"inputs\">
                         <input  type='text' name='email' placeholder='id пользователя' required>
                     </div>
@@ -50,7 +49,7 @@ $header = "
                 <tbody>
                     <tr>
                         <td>Задание 1</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_1'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 2</td>
