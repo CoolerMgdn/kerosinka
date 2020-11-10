@@ -28,12 +28,10 @@ $header = "
                     <input type=\"submit\" id=\"authbutton\" name=\"btn_submit_register\" value=\"Вывести результаты\">
             </form>
 
-            <div id='javascript_countdown_time'></div>
-
             <div class=\"sectionlk-info\">
                 <div class=\"sectionlk-info-text\">
                     <p class=\"about-text2\">
-                        <a id='orgref'>Фамилия:<br>Имя:<br>Отчество:<br>Пол:<br>Дата рождения:<br><br>Регион РФ:<br>Населенный пункт школы:<br>Класс:<br>Учебное заведение:<br>Адрес учебного заведения:<br><br>E-mail:<br>Телефон:<br>Почтовый индекс:<br>Населенный пункт:<br>Улица:<br>Дом:<br>Квартира:</a>
+                        <a id='orgref'>Фамилия:<br>Имя:<br>Отчество:<br>Пол:<br>Дата рождения:<br><br>Регион РФ:<br>Населенный пункт школы:<br>Класс:<br>Учебное заведение:<br>Адрес учебного заведения:<br><br>E-mail:<br>Телефон:<br>Почтовый индекс:<br>Населенный пункт:<br>Улица:<br>Дом:<br>Квартира:<br><br>ВАРИАНТ</a>
                     </p>
                 </div>
                 <div class=\"sectionlk-info-fromserver\"> 
