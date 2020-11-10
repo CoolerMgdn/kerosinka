@@ -20,7 +20,7 @@ $header = "
     <!-- Панель администратора -->
     <div class=\"container\">
         <section id=\"sectionlk\">
-            <a class=\"about-text\">Панель администратора</a><br>
+            <a class=\"about-text\">Панель администратора</a><br><br><br><br>
             <form class='formadmin' id='formadmin' method='post' action=''>
                     <div class=\"inputs\">
                         <input  type='text' name='email' placeholder='id пользователя' required>
