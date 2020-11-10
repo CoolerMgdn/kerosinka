@@ -4,6 +4,10 @@ const HOST = 'localhost';
 const USER = 'andrew';
 const PASSWORD = 'dolphin';
 
+const IS_NUMERAL = 0;
+const IS_ENGLISH = 1;
+const IS_RUSSIAN = 2;
+
 $numbersCharsEng = [
     1 => 'A',
     2 => 'B',
@@ -60,3 +64,74 @@ function checkAndPrepareParams($src, $required_params = [], $optional_params = [
     return $vars;
 }
 
+$variant_1 = [
+    1 => IS_RUSSIAN,
+    2 => IS_RUSSIAN,
+    3 => IS_NUMERAL,
+    4 => IS_NUMERAL,
+    5 => IS_NUMERAL, // ???
+    6 => IS_ENGLISH,
+    7 => IS_ENGLISH,
+    8 => IS_RUSSIAN,
+    9 => IS_ENGLISH,
+    10 => IS_ENGLISH,
+    11 => IS_ENGLISH,
+    12 => IS_ENGLISH,
+    13 => IS_NUMERAL,
+    14 => IS_ENGLISH,
+    15 => IS_ENGLISH
+];
+
+$variant_2 = [
+    1 => IS_RUSSIAN,
+    2 => IS_RUSSIAN,
+    3 => IS_RUSSIAN,
+    4 => IS_ENGLISH,
+    5 => IS_NUMERAL,
+    6 => IS_ENGLISH,
+    7 => IS_ENGLISH,
+    8 => IS_ENGLISH,
+    9 => IS_ENGLISH,
+    10 => IS_ENGLISH,
+    11 => IS_ENGLISH,
+    12 => IS_ENGLISH,
+    13 => IS_NUMERAL,
+    14 => IS_ENGLISH,
+    15 => IS_ENGLISH
+];
+
+$variant_3 = [
+    1 => IS_RUSSIAN,
+    2 => IS_RUSSIAN,
+    3 => IS_RUSSIAN,
+    4 => IS_RUSSIAN,
+    5 => IS_NUMERAL,
+    6 => IS_ENGLISH,
+    7 => IS_ENGLISH,
+    8 => IS_ENGLISH,
+    9 => IS_ENGLISH,
+    10 => IS_ENGLISH,
+    11 => IS_ENGLISH,
+    12 => IS_ENGLISH,
+    13 => IS_RUSSIAN,
+    14 => IS_ENGLISH,
+    15 => IS_ENGLISH
+];
+
+$variant_4 = [
+    1 => IS_RUSSIAN,
+    2 => IS_ENGLISH,
+    3 => IS_ENGLISH,
+    4 => IS_RUSSIAN,
+    5 => IS_NUMERAL,
+    6 => IS_ENGLISH,
+    7 => IS_ENGLISH,
+    8 => IS_ENGLISH,
+    9 => IS_ENGLISH,
+    10 => IS_ENGLISH,
+    11 => IS_ENGLISH,
+    12 => IS_NUMERAL,
+    13 => IS_ENGLISH,
+    14 => IS_ENGLISH,
+    15 => IS_ENGLISH
+];

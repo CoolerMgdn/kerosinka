@@ -1,7 +1,10 @@
 <?php
-require_once('include.php');
 require('nav-home.php');
 
+$userInfo = $_SESSION['userInfo'];
+$userTasks = $_SESSION['userTasks'];
+
+$classNumber = $userInfo['class_number'] == 0 ? 'Не школьник' : $userInfo['class_number'];
 
 $header = "
     <!DOCTYPE html>
@@ -21,9 +24,9 @@ $header = "
     <div class=\"container\">
         <section id=\"sectionlk\">
             <a class=\"about-text\">Панель администратора</a><br>
-            <form class='formadmin' id='formadmin' method='post' action=''>
+            <form class='formadmin' id='formadmin' method='post' action='src/php/read_info.php'>
                     <div class=\"inputs\">
-                        <input  type='text' name='email' placeholder='id пользователя' required>
+                        <input  type='text' name='userId' placeholder='id пользователя' required>
                     </div>
                     <input type=\"submit\" id=\"authbutton\" name=\"btn_submit_register\" value=\"Вывести результаты\">
             </form>
@@ -49,7 +52,7 @@ $header = "
                 <tbody>
                     <tr>
                         <td>Задание 1</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_1'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 2</td>
