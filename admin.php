@@ -2,6 +2,10 @@
 require_once('include.php');
 require('nav-home.php');
 
+$userInfo = $_SESSION['userInfo'];
+$userTasks = $_SESSION['userTasks'];
+
+$classNumber = $userInfo['class_number'] == 0 ? 'Не школьник' : $userInfo['class_number'];
 
 $header = "
     <!DOCTYPE html>
@@ -20,10 +24,10 @@ $header = "
     <!-- Панель администратора -->
     <div class=\"container\">
         <section id=\"sectionlk\">
-            <a class=\"about-text\">Панель администратора</a><br>
-            <form class='formadmin' id='formadmin' method='post' action=''>
+        <a class=\"about-text\">Панель администратора</a><br><br><br><br>
+            <form class='formadmin' id='formadmin' method='post' action='src/php/read_info.php'>
                     <div class=\"inputs\">
-                        <input  type='text' name='email' placeholder='id пользователя' required>
+                        <input  type='text' name='userId' placeholder='id пользователя' required>
                     </div>
                     <input type=\"submit\" id=\"authbutton\" name=\"btn_submit_register\" value=\"Вывести результаты\">
             </form>
