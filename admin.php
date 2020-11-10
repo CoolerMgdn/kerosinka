@@ -15,6 +15,7 @@ $header = "
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>Личный кабинет</title>
+        <script src='./src/js/pass.js'></script>
     " . $header;
 
     $mainPage = "
@@ -35,7 +36,7 @@ $header = "
             <div class=\"sectionlk-info\">
                 <div class=\"sectionlk-info-text\">
                     <p class=\"about-text2\">
-                        <a id='orgref'>Фамилия:<br>Имя:<br>Отчество:<br>Пол:<br>Дата рождения:<br><br>Регион РФ:<br>Населенный пункт школы:<br>Класс:<br>Учебное заведение:<br>Адрес учебного заведения:<br><br>E-mail:<br>Телефон:<br>Почтовый индекс:<br>Населенный пункт:<br>Улица:<br>Дом:<br>Квартира:<br><br>ВАРИАНТ</a>
+                        <a id='orgref'>Фамилия:<br>Имя:<br>Отчество:<br>Пол:<br>Дата рождения:<br><br>Регион РФ:<br>Населенный пункт школы:<br>Класс:<br>Учебное заведение:<br>Адрес учебного заведения:<br><br>E-mail:<br>Телефон:<br>Почтовый индекс:<br>Населенный пункт:<br>Улица:<br>Дом:<br>Квартира:</a>
                     </p>
                 </div>
                 <div class=\"sectionlk-info-fromserver\"> 
@@ -47,6 +48,8 @@ $header = "
                 </div>
             </div>
 
+            <a class=\"about-text\">Вариант " . $userInfo['variant'] . "</a>
+            
             <table class='about-text2'>
                 <tbody>
                     <tr>
