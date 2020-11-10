@@ -451,7 +451,7 @@ body {
   padding: 10px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "fio fio" "text fromserver" "btn btn" "testinfo testinfo" "test test" "exit exit";
+      grid-template-areas: "fio fio" "text fromserver" "btn btn" "testinfo testinfo" "test test" "exit exit";
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
