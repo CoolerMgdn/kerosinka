@@ -53,87 +53,87 @@ $header = "
                     </tr>
                     <tr>
                         <td>Задание 2</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_2'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 3</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_3'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 4</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_4'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 5</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_5'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 6</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_6'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 7</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_7'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 8</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_8'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 9</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_9'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 10</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_10'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 11</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_11'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 12</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_12'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 13</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_13'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 14</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_14'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 15</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_15'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 16</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_16'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 17</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_17'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 18</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_18'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 19</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_19'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 20</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_20'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 21</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_21'] . "</td>
                     </tr>
                     <tr>
                         <td>Задание 22</td>
-                        <td> </td>
+                        <td>" . $userTasks['task_22'] . "</td>
                     </tr>
                 </tbody>
             </table>
