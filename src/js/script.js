@@ -318,3 +318,7 @@ $(document).ready(function(){
     {
         document.getElementById("formtest").submit();
     }
+
+    function testAlert() {
+        alert("ВНИМАНИЕ! Сасат");
+      }
