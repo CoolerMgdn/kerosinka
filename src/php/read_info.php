@@ -59,5 +59,6 @@ mysqli_close($conn);
 session_start();
 $_SESSION['userInfo'] = $userInfo;
 $_SESSION['userTasks'] = $userTasks;
+$_SESSION['userId'] = $userId;
 
 header('Location: ./../../admin.php');

@@ -68,7 +68,7 @@ $mainPage = "
                 
                 <form method=\"post\" action=\"test.php\" class=\"sectionlk-info-test\">
                     <div>
-                        <button type=\"submit\" onlick='testAlert()' name=\"variant\" class=\"cd-link\" value=\"" . $userInfo['variant'] . "\">Начать тестирование</button>
+                        <button type=\"submit\" onclick='testAlert()' name=\"variant\" class=\"cd-link\" value=\"" . $userInfo['variant'] . "\">Начать тестирование</button>
                     </div>
                 </form>
 

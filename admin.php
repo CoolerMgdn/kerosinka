@@ -146,7 +146,7 @@ $header = "
                 </tbody>
             </table>
 
-            <form class='formadmin' id='formadmin' method='post' action='src/php/read_info.php'>
+            <form class='formadmin' id='formadmin' method='post' action='src/php/user_tasks_drop.php'>
                     <input type=\"submit\" id=\"regbutton\" name=\"btn_submit_register\" value=\"Обнулить результаты\"><br><br<br><br>
             </form>
 
