@@ -48,7 +48,7 @@ if ($rawResultChecking->num_rows) {
 
 $sqlInsertRegister = "
     insert into USER_REGISTER
-        (password, email, variant)
+        (password, email, CASE_NUMBER)
     values
         ('{$password}', '{$email}', {$variant}); 
 ";
@@ -66,7 +66,7 @@ $sqlInsertInfo = "
     insert into USER_INFO
         (lastname, firstname, patronymic, sex, birthdate, region_id, edu_city, class_number, edu_name, edu_address, phone, post_index, city, street, house, apartment, reg_id)
     values
-        ('{$lastname}', '{$firstname}', '{$patronymic}', '{$sex}', str_to_date('{$birthdate}', '%d.%m.%Y'), {$region_id}, '{$educity}', {$class_number}, '{$edu_name}', '{$edu_address}', '{$phone}', {$post_index}, '{$city}', '{$street}', {$house}, {$apartment}, {$registrationId});
+        ('{$lastname}', '{$firstname}', '{$patronymic}', '{$sex}', str_to_date('{$birthdate}', '%d.%m.%Y'), {$region_id}, '{$edu_city}', {$class_number}, '{$edu_name}', '{$edu_address}', '{$phone}', {$post_index}, '{$city}', '{$street}', {$house}, {$apartment}, {$registrationId});
 ";
 mysqli_query($conn, $sqlInsertInfo);
 
@@ -84,6 +84,14 @@ $sqlRegisterSetUserId = "
     where email = '{$email}' and password = '{$password}';
 ";
 mysqli_query($conn, $sqlRegisterSetUserId);
+
+$sqlUpdateAttendance = "
+    update USER_REGISTER
+    set attend_count = ifnull(attend_count, 0) + 1,
+        attend_data = now()
+    where email = '{$email}' and password = '{$password}';
+";
+mysqli_query($conn, $sqlUpdateAttendance);
 
 mysqli_close($conn);
 

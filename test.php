@@ -16,7 +16,7 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
-    select t.user_id, t.start_date
+    select t.user_id
     from USER_TESTS t
     where t.user_id = {$userId};
 ";
@@ -26,12 +26,11 @@ if ($rawGetInfo->num_rows) {
 }
 $userInfo = mysqli_fetch_array($rawGetInfo, MYSQLI_ASSOC);
 
-$timestamp = date("Y-m-d H:i:s");
 $sqlFirstInsert = "
     insert into USER_TESTS
-        (user_id, start_date)
+        (user_id)
     values
-        ({$userId}, {$timestamp});
+        ({$userId});
 ";
 mysqli_query($conn, $sqlFirstInsert);
 
@@ -43,20 +42,6 @@ $header = "
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>Онлайн этап олимпиады</title>
-            <script src='https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js'></script>
-            <script>
-                set_onbeforeunload = function(){
-                    return true;
-                };
-            $(document).ready(function(){
-                $(document).on('input', ':input', function() {
-                    window.onbeforeunload = set_onbeforeunload;
-                });
-                $('form').submit(function(){
-                    window.onbeforeunload = null;
-                });
-            });
-            </script>
     " . $header;
 
 $mainPage = file_get_contents((__DIR__) . '/tests/test' . $variant . '.html');

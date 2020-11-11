@@ -15,7 +15,7 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
-    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email, r.variant
+    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email, r.case_number as variant
     from USER_INFO i
     join USER_REGISTER r
         on r.user_id = i.user_id

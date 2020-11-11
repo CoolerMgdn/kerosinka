@@ -5,7 +5,10 @@ require('nav-home.php');
 $userInfo = $_SESSION['userInfo'];
 $userTasks = $_SESSION['userTasks'];
 
-$classNumber = $userInfo['class_number'] == 0 ? 'Не школьник' : $userInfo['class_number'];
+if ($userInfo) {
+    $classNumber = $userInfo['class_number'] == 0 ? 'Не школьник' : $userInfo['class_number'];
+    $sex = $userInfo['sex'] == 'M' ? 'Муж' : 'Жен';
+}
 
 $header = "
     <!DOCTYPE html>
@@ -49,7 +52,7 @@ $header = "
             </div>
 
             <a class=\"about-text\">Вариант " . $userInfo['variant'] . "</a>
-            
+
             <table class='about-text2'>
                 <tbody>
                     <tr>
@@ -147,5 +150,8 @@ $header = "
     </div>
     ";
 $footer = file_get_contents((__DIR__) . '/footer.php');
+
+$_SESSION['userInfo'] = null;
+$_SESSION['userTasks'] = null;
 
 echo $header . $mainPage . $footer;

@@ -10,7 +10,9 @@ if (!$conn) {
 mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
-    select i.lastname, i.firstname, i.patronymic, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, i.edu_name, i.class_number, i.phone, r.email, r.variant 
+    select i.lastname, i.firstname, i.patronymic, i.sex, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, 
+        i.edu_city, edu_address, i.edu_name, i.class_number, i.region_id, i.phone, i.post_index, r.email, i.city, 
+        i.street, i.house, i.apartment, r.CASE_NUMBER as variant 
     from USER_INFO i
     join USER_REGISTER r
         on r.user_id = i.user_id
@@ -51,6 +53,8 @@ foreach ($userTasks as $key => $task) {
         $userTasks[$key] = $valuesTask;
     }
 }
+
+mysqli_close($conn);
 
 session_start();
 $_SESSION['userInfo'] = $userInfo;

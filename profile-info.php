@@ -16,7 +16,7 @@ mysqli_select_db($conn, 'kerosinkaDB');
 
 $sqlGetInfo = "
     select i.lastname, i.firstname, i.patronymic, i.sex, date_format(i.birthdate, '%d.%m.%Y') as birthdate, i.city, 
-        i.edu_city, edu_address, i.edu_name, i.class_number, i.region_id, i.phone, i.post_index, r.email, i.city, 
+        i.edu_city, i.edu_address, i.edu_name, i.class_number, i.region_id, i.phone, i.post_index, r.email, i.city, 
         i.street, i.house, i.apartment
     from USER_INFO i
     join USER_REGISTER r
